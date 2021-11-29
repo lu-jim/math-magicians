@@ -44,4 +44,4 @@ Give a ⭐️ if you like this project!
 - My SO and project manager, Mane
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE.md) licensed.
