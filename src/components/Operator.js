@@ -9,10 +9,13 @@ const operators = [
 ];
 const operatorButtons = operators.map((el) => <button className={el.name}>{el.value}</button>);
 
-
 class Operator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   render() {
-    return <div className='operator'>{operatorButtons}</div>;
+    return <div className="operator">{operatorButtons}</div>;
   }
 }
 

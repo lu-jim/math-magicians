@@ -21,11 +21,7 @@ const elementButtons = elements.map((el) => <button className={el.name}>{el.valu
 
 class Element extends React.Component {
   render() {
-    return (
-      <div className='elements'>
-      {elementButtons}
-      </div>
-    );
+    return <div className="elements">{elementButtons}</div>;
   }
 }
 
