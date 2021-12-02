@@ -17,9 +17,14 @@ const elements = [
   { name: 'element dot', value: '.' },
 ];
 
-const elementButtons = elements.map((el) => <button className={el.name}>{el.value}</button>);
+const elementButtons = elements.map((el) => <button className={el.name} key={elements.indexOf(el)} type="button">{el.value}</button>);
 
 class Element extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
     return <div className="elements">{elementButtons}</div>;
   }

@@ -5,6 +5,7 @@ class Screen extends React.Component {
     super(props);
     this.state = {};
   }
+
   render() {
     return <div className="screen">0</div>;
   }
