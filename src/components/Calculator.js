@@ -1,19 +1,25 @@
 import React from 'react';
 import Screen from './Screen';
 import Keys from './Keys';
+import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.handleStateChange = this.handleStateChange.bind(this);
+    this.state = { total: null, next: null, operation: null };
+  }
+
+  handleStateChange(newState) {
+    this.setState({});
   }
 
   render() {
     return (
-      <div className="Calculator">
-        <Screen />
-        <Keys />
-      </div>
+      <>
+        <Screen display={this.state.total}/>
+        <Keys state={this.state}/>
+      </>
     );
   }
 }
