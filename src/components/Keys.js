@@ -3,20 +3,11 @@ import React from 'react';
 class Keys extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      total: 1,
-      next: null,
-      operation: null,
-    };
-    this.handleClick = this.handleClick.bind(this);
+    this.onClick = this.onClick.bind(this);
   }
-
-  handleClick({ target }) {
-    this.setState({total: target.value})
-    console.log(target.value);
-    console.log(this.state);
+  onClick(e) {
+    this.props.onClick(e.target);
   }
-
   render() {
     const keys = [
       { label: 'element zero', name: '0' },
@@ -40,7 +31,7 @@ class Keys extends React.Component {
       { label: 'operator equal', name: '=' },
     ];
     const keyButtons = keys.map((el) => (
-      <button className={el.label} key={keys.indexOf(el)} type="button" value={el.name} onClick={this.handleClick}>
+      <button className={el.label} key={keys.indexOf(el)} type="button" value={el.name} onClick={this.onClick}>
         {el.name}
       </button>
     ));

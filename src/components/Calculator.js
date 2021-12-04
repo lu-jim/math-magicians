@@ -6,19 +6,20 @@ import calculate from '../logic/calculate';
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.handleStateChange = this.handleStateChange.bind(this);
+    this.onClick = this.onClick.bind(this);
     this.state = { total: null, next: null, operation: null };
   }
 
-  handleStateChange(newState) {
-    this.setState({});
+  onClick({ value }) {
+    const calc = calculate(this.state, value);
+    this.setState({total: calc.total, next: calc.next, operation: calc.operation} );
   }
 
   render() {
     return (
       <>
-        <Screen display={this.state.total}/>
-        <Keys state={this.state}/>
+        <Screen display={this.state} />
+        <Keys state={this.state} onClick={this.onClick} />
       </>
     );
   }

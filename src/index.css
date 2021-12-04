@@ -141,3 +141,8 @@ button {
 .element:hover {
   background-color: #f8e2e9cc;
 }
+
+.screen {
+  display: flex;
+  justify-content: space-between;
+}
