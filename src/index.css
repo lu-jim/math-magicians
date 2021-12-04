@@ -18,30 +18,28 @@ body {
 }
 
 .screen {
-  width: 22.1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 22rem;
   padding: 0.75rem 1rem;
   text-align: right;
   font-size: calc(1rem * 1.2 * 1.2);
-  border: 4px solid #985277;
+  border: 5px solid #985277;
   margin-bottom: 3px;
   background-color: #4281a4;
 }
 
 .keys {
-  display: flex;
-}
-
-.elements {
   display: grid;
   grid-gap: 3px;
   font-size: calc(1rem * 1.2 * 1.2);
   grid-template-columns: repeat(4, auto);
   grid-template-areas:
-    'clear sign percent'
-    'seven eight nine'
-    'four five six'
-    'one two three'
-    'zero zero dot';
+    'clear sign percent divide'
+    'seven eight nine times'
+    'four five six minus'
+    'one two three plus'
+    'zero zero dot equal';
 }
 
 button {
@@ -126,23 +124,10 @@ button {
 }
 
 .operator {
-  display: grid;
-  grid-gap: 3px;
-  font-size: calc(1rem * 1.2 * 1.2);
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    'divide'
-    'times'
-    'minus'
-    'plus'
-    'equal';
-}
-
-.operator > button {
   background-color: #d65108;
 }
 
-.elements > button {
+.element {
   background-color: antiquewhite;
 }
 
@@ -164,4 +149,12 @@ button {
 
 .equal {
   grid-area: equal;
+}
+
+.operator:hover {
+  background-color: #d65108cc;
+}
+
+.element:hover {
+  background-color: #f8e2e9cc;
 }
