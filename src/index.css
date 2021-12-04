@@ -2,12 +2,24 @@
 
 body {
   margin: 0;
-  font-family: 'IBM Plex Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+  font-family:
+    'IBM Plex Mono',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
     sans-serif;
   font-weight: 400;
 }
 
 .screen {
+  display: flex;
+  justify-content: space-between;
   width: 22rem;
   padding: 0.75rem 1rem;
   text-align: right;
@@ -15,10 +27,6 @@ body {
   border: 5px solid #985277;
   margin-bottom: 3px;
   background-color: #4281a4;
-}
-
-.keys {
-  display: flex;
 }
 
 .keys {
@@ -36,7 +44,17 @@ body {
 
 button {
   border: 0;
-  font-family: 'IBM Plex Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+  font-family:
+    'IBM Plex Mono',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
     sans-serif;
   font-weight: 400;
   font-size: 1.75rem;
@@ -137,12 +155,6 @@ button {
   background-color: #d65108cc;
 }
 
-
 .element:hover {
   background-color: #f8e2e9cc;
-}
-
-.screen {
-  display: flex;
-  justify-content: space-between;
 }

@@ -12,7 +12,7 @@ class Calculator extends React.Component {
 
   onClick({ value }) {
     const calc = calculate(this.state, value);
-    this.setState({total: calc.total, next: calc.next, operation: calc.operation} );
+    this.setState( { total: calc.total, next: calc.next, operation: calc.operation } );
   }
 
   render() {
