@@ -7,11 +7,6 @@ class Screen extends React.Component {
     this.state = {}
   }
 
-  static propTypes = {
-    total: PropTypes.string.isRequired,
-    next: PropTypes.string.isRequired,
-    string: PropTypes.string.isRequired,
-  }
 
   render() {
     const total = this.props.display.total ? this.props.display.total : '0';
@@ -20,6 +15,13 @@ class Screen extends React.Component {
       <div className="screen"> <span>{this.props.display.operation ? this.props.display.operation : ''}</span> {this.props.display.next ? this.props.display.next : total }</div>
     );
   }
+}
+
+Screen.propTypes = {
+  total: PropTypes.string.isRequired,
+  next: PropTypes.string.isRequired,
+  string: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 }
 
 export default Screen;
