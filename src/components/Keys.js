@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Keys extends React.Component {
   constructor(props) {
@@ -8,6 +9,10 @@ class Keys extends React.Component {
 
   onClick({target}) {
     this.props.onClick(target);
+  }
+
+  static propTypes = {
+    target: PropTypes.object.isRequired,
   }
 
   render() {
