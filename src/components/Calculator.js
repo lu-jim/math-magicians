@@ -10,9 +10,9 @@ class Calculator extends React.Component {
     this.state = { total: null, next: null, operation: null };
   }
 
-  onClick({ value }) {
-    const calc = calculate(this.state, value);
-    this.setState( { total: calc.total, next: calc.next, operation: calc.operation } );
+  onClick(props) {
+    const calc = calculate(this.state, props.value);
+    this.setState({ total: calc.total, next: calc.next, operation: calc.operation });
   }
 
   render() {

@@ -5,9 +5,11 @@ class Keys extends React.Component {
     super(props);
     this.onClick = this.onClick.bind(this);
   }
-  onClick(e) {
-    this.props.onClick(e.target);
+
+  onClick({target}) {
+    this.props.onClick(target);
   }
+
   render() {
     const keys = [
       { label: 'element zero', name: '0' },
