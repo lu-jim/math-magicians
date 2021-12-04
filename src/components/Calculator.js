@@ -13,7 +13,7 @@ const Calculator = () => {
   };
 
   onClick.PropTypes = {
-    value: PropTypes.string.isRequired,
+    value: PropTypes.func.isRequired,
   };
 
   return (
