@@ -8,7 +8,9 @@ class Screen extends React.Component {
   }
 
   static propTypes = {
-    display: PropTypes.object.isRequired,
+    total: PropTypes.string.isRequired,
+    next: PropTypes.string.isRequired,
+    string: PropTypes.string.isRequired,
   }
 
   render() {
