@@ -8,15 +8,14 @@ class Screen extends React.Component {
   }
 
   render() {
-    const { display } = this.props;
-    const total = display.total ? display.total : '0';
+    const { display: { total, operation, next } } = this.props;
 
     return (
       <div className="screen">
         {' '}
-        <div>{display.operation ? display.operation : ''}</div>
+        <div>{operation || ''}</div>
         {' '}
-        {display.next ? display.next : total }
+        {next || total || '0' }
       </div>
     );
   }
