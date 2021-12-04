@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-/* eslint-disable react/destructuring-assignment */
 
 class Keys extends React.Component {
   constructor(props) {
@@ -10,7 +9,8 @@ class Keys extends React.Component {
   }
 
   onClick(e) {
-    this.props.onClick(e.target);
+    const { onClick } = this.props;
+    onClick(e.target);
   }
 
   render() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-/* eslint-disable react/destructuring-assignment */
+
 class Screen extends React.Component {
   constructor(props) {
     super(props);
@@ -8,14 +8,15 @@ class Screen extends React.Component {
   }
 
   render() {
-    const total = this.props.display.total ? this.props.display.total : '0';
+    const { display } = this.props;
+    const total = display.total ? display.total : '0';
 
     return (
       <div className="screen">
         {' '}
-        <div>{this.props.display.operation ? this.props.display.operation : ''}</div>
+        <div>{display.operation ? display.operation : ''}</div>
         {' '}
-        {this.props.display.next ? this.props.display.next : total }
+        {display.next ? display.next : total }
       </div>
     );
   }
