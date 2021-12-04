@@ -5,7 +5,6 @@ class Keys extends React.Component {
   constructor(props) {
     super(props);
     this.onClick = this.onClick.bind(this);
-    this.state = {};
   }
 
   onClick(e) {
