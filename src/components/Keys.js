@@ -7,12 +7,8 @@ class Keys extends React.Component {
     this.onClick = this.onClick.bind(this);
   }
 
-  onClick({target}) {
+  onClick({ target }) {
     this.props.onClick(target);
-  }
-
-  static propTypes = {
-    target: PropTypes.object.isRequired,
   }
 
   render() {
@@ -45,6 +41,10 @@ class Keys extends React.Component {
 
     return <div className="keys">{keyButtons}</div>;
   }
+}
+
+Keys.propTypes = {
+  onClick: PropTypes.func,
 }
 
 export default Keys;
