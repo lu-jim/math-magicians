@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+/* eslint-disable react/destructuring-assignment */
 
 class Keys extends React.Component {
   constructor(props) {
     super(props);
     this.onClick = this.onClick.bind(this);
+    this.state = {};
   }
 
-  onClick({ target }) {
-    this.props.onClick(target);
+  onClick(e) {
+    this.props.onClick(e.target);
   }
 
   render() {
@@ -44,7 +46,7 @@ class Keys extends React.Component {
 }
 
 Keys.propTypes = {
-  onClick: PropTypes.func,
-}
+  onClick: PropTypes.func.isRequired,
+};
 
 export default Keys;
