@@ -17,10 +17,16 @@ const Calculator = () => {
   };
 
   return (
-    <>
-      <Screen display={memory} />
-      <Keys state={memory} onClick={onClick} />
-    </>
+    <div id="calculator">
+      <div className="calc-text">
+        <h2> Let&apos;s do some math!</h2>
+      </div>
+
+      <div className="calc-app">
+        <Screen display={memory} />
+        <Keys state={memory} onClick={onClick} />
+      </div>
+    </div>
   );
 };
 
