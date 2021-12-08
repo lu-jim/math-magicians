@@ -17,6 +17,13 @@ body {
   font-weight: 400;
 }
 
+#root {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .screen {
   display: flex;
   justify-content: space-between;
