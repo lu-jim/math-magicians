@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders keys correctly 1`] = `
+<div
+  className="keys"
+>
+  <button
+    className="element zero"
+    onClick={[Function]}
+    type="button"
+    value="0"
+  >
+    0
+  </button>
+  <button
+    className="element one"
+    onClick={[Function]}
+    type="button"
+    value="1"
+  >
+    1
+  </button>
+  <button
+    className="element two"
+    onClick={[Function]}
+    type="button"
+    value="2"
+  >
+    2
+  </button>
+  <button
+    className="element three"
+    onClick={[Function]}
+    type="button"
+    value="3"
+  >
+    3
+  </button>
+  <button
+    className="element four"
+    onClick={[Function]}
+    type="button"
+    value="4"
+  >
+    4
+  </button>
+  <button
+    className="element five"
+    onClick={[Function]}
+    type="button"
+    value="5"
+  >
+    5
+  </button>
+  <button
+    className="element six"
+    onClick={[Function]}
+    type="button"
+    value="6"
+  >
+    6
+  </button>
+  <button
+    className="element seven"
+    onClick={[Function]}
+    type="button"
+    value="7"
+  >
+    7
+  </button>
+  <button
+    className="element eight"
+    onClick={[Function]}
+    type="button"
+    value="8"
+  >
+    8
+  </button>
+  <button
+    className="element nine"
+    onClick={[Function]}
+    type="button"
+    value="9"
+  >
+    9
+  </button>
+  <button
+    className="element clear"
+    onClick={[Function]}
+    type="button"
+    value="AC"
+  >
+    AC
+  </button>
+  <button
+    className="element sign"
+    onClick={[Function]}
+    type="button"
+    value="+/-"
+  >
+    +/-
+  </button>
+  <button
+    className="element percent"
+    onClick={[Function]}
+    type="button"
+    value="%"
+  >
+    %
+  </button>
+  <button
+    className="element dot"
+    onClick={[Function]}
+    type="button"
+    value="."
+  >
+    .
+  </button>
+  <button
+    className="operator plus"
+    onClick={[Function]}
+    type="button"
+    value="+"
+  >
+    +
+  </button>
+  <button
+    className="operator minus"
+    onClick={[Function]}
+    type="button"
+    value="-"
+  >
+    -
+  </button>
+  <button
+    className="operator times"
+    onClick={[Function]}
+    type="button"
+    value="x"
+  >
+    x
+  </button>
+  <button
+    className="operator divide"
+    onClick={[Function]}
+    type="button"
+    value="÷"
+  >
+    ÷
+  </button>
+  <button
+    className="operator equal"
+    onClick={[Function]}
+    type="button"
+    value="="
+  >
+    =
+  </button>
+</div>
+`;
