@@ -23,6 +23,9 @@ To get a local copy up and running follow these simple steps.
 - Open your console and change the current working directory into the destination for this project.
 - Type `git clone`, and then paste the URL copied in the Setup section.
 - Type Enter to finish the installation process.
+- Run `npm i` and after all the dependencies are installed run `npm start`
+### Testing
+- Run `npm run test` at your command line inside the root folder of the project
 ## Authors
 
 👤 **Luis Fernando Jimenez**
@@ -44,4 +47,4 @@ Give a ⭐️ if you like this project!
 - My SO and project manager, Mane
 ## 📝 License
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](./MIT.md) licensed.
