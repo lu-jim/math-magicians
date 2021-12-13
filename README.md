@@ -26,6 +26,10 @@ To get a local copy up and running follow these simple steps.
 - Run `npm i` and after all the dependencies are installed run `npm start`
 ### Testing
 - Run `npm run test` at your command line inside the root folder of the project
+
+### Live Version:
+- [Heroku](https://calm-headland-51100.herokuapp.com)
+- [Netlify](https://vigorous-kalam-1fde6b.netlify.app/)
 ## Authors
 
 👤 **Luis Fernando Jimenez**
@@ -33,11 +37,17 @@ To get a local copy up and running follow these simple steps.
 - GitHub: [@lu-jim](https://github.com/lu-jim)
 - Twitter: [@lujimhe](https://twitter.com/lujimhe)
 - LinkedIn: [@lujim](https://www.linkedin.com/in/lujim/)
+
+👤 **Raul Figueroa**
+
+- E-mail: [rfigueroaa17@gmail.com](rfigueroaa17@gmail.com)
+- Github: [@tacodtripe](https://github.com/tacodtripe)
+- Linkedin: [Raul Figueroa](https://www.linkedin.com/in/luis-raul-figueroa-soto-63411118a/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel
 ## Show your support
 
 Give a ⭐️ if you like this project!
