@@ -28,7 +28,6 @@ To get a local copy up and running follow these simple steps.
 - Run `npm run test` at your command line inside the root folder of the project
 
 ### Live Version:
-- [Heroku](https://calm-headland-51100.herokuapp.com)
 - [Netlify](https://vigorous-kalam-1fde6b.netlify.app/)
 ## Authors
 
